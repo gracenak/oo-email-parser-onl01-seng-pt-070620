@@ -8,11 +8,12 @@ class EmailAddressParser
     @emails = emails
   end
   
+
   def parse
-    emails.delete(',').split.uniq
+    @emails.gsub(",", "").split(" ").uniq
   end
   
-  
 end
+
   
     
